@@ -1,6 +1,6 @@
 {
   "name": "is-valid-organization-number",
-  "description": "Løsning for søknader om tilskudd",
+  "description": "Validates organization numbers",
   "version": "1.0.0",
   "license": "MIT",
   "author": {
