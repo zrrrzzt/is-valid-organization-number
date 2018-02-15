@@ -10,15 +10,15 @@
   },
   "main": "index.js",
   "engines": {
-    "node": ">=4.6.2"
+    "node": ">=8.9.4"
   },
   "scripts": {
     "test": "standard && nsp check && tap --reporter=spec test/**/*.js",
     "test-offline": "standard && tap --reporter=spec test/**/*.js",
     "coverage": "tap test/**/*.js --coverage",
     "coveralls": "tap --cov --coverage-report=lcov test/**/*.js && cat coverage/lcov.info | coveralls",
-    "setup": "npm install && node setup.js",
-    "standard-fix": "standard --fix"
+    "standard-fix": "standard --fix",
+    "refresh": "rm -rf node_modules && rm package-lock.json && npm install"
   },
   "keywords": [
     "validation",
@@ -28,11 +28,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "http://github.com/zrrrzzt/is-valid-organization-number.git"
+    "url": "https://github.com/zrrrzzt/is-valid-organization-number.git"
   },
   "bugs": {
-    "url": "http://github.com/zrrrzzt/is-valid-organization-number/issues"
+    "url": "https://github.com/zrrrzzt/is-valid-organization-number/issues"
   },
+  "homepage": "https://github.com/zrrrzzt/is-valid-organization-number#readme",
   "devDependencies": {
     "coveralls": "3.0.0",
     "nsp": "3.1.0",
