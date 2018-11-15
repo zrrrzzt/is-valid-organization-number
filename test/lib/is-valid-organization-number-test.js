@@ -7,7 +7,7 @@ tap.throws(
   () => {
     isValidOrganizationNumber()
   },
-  {message: 'Missing required input: organization number'},
+  { message: 'Missing required input: organization number' },
   'throws if input is missing'
 )
 
@@ -15,7 +15,7 @@ tap.throws(
   () => {
     isValidOrganizationNumber(123)
   },
-  {message: 'Wrong length. Organization number must be 9 digits'},
+  { message: 'Wrong length. Organization number must be 9 digits' },
   'throws if input is too short'
 )
 
@@ -23,7 +23,7 @@ tap.throws(
   () => {
     isValidOrganizationNumber(123456789087161)
   },
-  {message: 'Wrong length. Organization number must be 9 digits'},
+  { message: 'Wrong length. Organization number must be 9 digits' },
   'throws if input is too long'
 )
 
