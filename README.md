@@ -14,8 +14,6 @@ $ npm i is-valid-organization-number
 
 ## Usage
 ```JavaScript
-'use strict'
-
 const isValidOrganizationNumber = require('is-valid-organization-number')
 
 isValidOrganizationNumber(123456785) // => true
@@ -26,5 +24,3 @@ isValidOrganizationNumber(123456786) // => false
 ## License
 
 [MIT](LICENSE)
-
-![Robohash image of is-valid-organization-number](https://robots.kebabstudios.party/is-valid-organization-number.png "Robohash image of is-valid-organization-number")
